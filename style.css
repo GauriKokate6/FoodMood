@@ -62,15 +62,14 @@ li{
 
 
 .wrapper{
-    max-width: 1400px;
-    
+    max-width: 2400px;
     margin: auto;
     padding-inline: 1.5rem;
 
 }
 
 .logo{
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
     color: var(--gold-finger);
 }
@@ -81,7 +80,7 @@ li{
     padding: 0.9rem 2rem;
     background: var(--gold-finger);
     border-radius: 1rem;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     color: var(--pure-white);
     box-shadow:rgba(0, 0, 0, 0.1) 0px 2px 1px ;
     transition: 0.3s ease-in-out;
@@ -95,7 +94,7 @@ li{
 
 .cart-icon{
     
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: var(--lead);
     position: relative;
 }
@@ -129,6 +128,27 @@ img{
 .navbar{
    min-height: 14vh;
 }
+
+/* Navigation list styling */
+.nav-list li a{
+    font-size: 1.25rem;
+    display: inline-block;
+    padding: 0.45rem 0.6rem;
+    font-weight: 500;
+    color: var(--lead);
+    transition: color 0.18s ease, transform 0.18s ease;
+}
+
+.nav-list li a:hover{
+    color: var(--gold-finger);
+    transform: translateY(-2px);
+}
+
+
+
+
+
+
 
 
 .desktop-action .hamburger{
@@ -196,7 +216,7 @@ h1 span{
 
 
 p{
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     color: gray;
     line-height: 1.8rem;
     font-weight: 400;
