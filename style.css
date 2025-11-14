@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+:root{
+    --lead:#212121;
+    --gold-finger:#fed611;
+    --eye-ball:#FFFDF7;
+    --hint-yellow:#FCF1CC;
+    --pure-white:#fff;
+
+}
+
+body{
+    background-color:var(--eye-ball) ;
+}
+
+/* 
+BASIC STYLES */
+
+a{
+    text-decoration: none;
+    font-size:1.1rem;
+    color: inherit;
+}
+
+
+.gap-2{
+    gap: 2rem;
+}
+
+
+li{
+    list-style: none;
+}
+
+.between{
+
+    justify-content: space-between;
+    
+}
+
+.gap-3{
+    gap: 3rem;
+
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    flex-wrap:wrap;
+    
+}
+
+
+.wrapper{
+    max-width: 1400px;
+    
+    margin: auto;
+    padding-inline: 1.5rem;
+
+}
+
+.logo{
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--gold-finger);
+}
+
+
+.btn{
+    display: inline-block;
+    padding: 0.9rem 2rem;
+    background: var(--gold-finger);
+    border-radius: 1rem;
+    font-size: 1.1rem;
+    color: var(--pure-white);
+    box-shadow:rgba(0, 0, 0, 0.1) 0px 2px 1px ;
+    transition: 0.3s ease-in-out;
+
+}
+
+.btn:hover{
+    background: var(--lead);
+}
+
+
+.cart-icon{
+    
+    font-size: 1.3rem;
+    color: var(--lead);
+    position: relative;
+}
+
+.cart-icon .cart-value{
+
+    font-size: 0.85rem;
+    width: 20px;
+    aspect-ratio: 1;
+    position: absolute;
+   border-radius: 100vh;
+   background: var(--gold-finger);
+    color: var(--lead);
+    text-align: center;
+    line-height: 20px;
+    top: 50%;
+    right: -10px;
+}
+
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin:auto;
+}
+
+/* header */
+
+
+.navbar{
+   min-height: 14vh;
+}
+
+
+.desktop-action .hamburger{
+    font-size: 1.5rem;
+    color: var(--lead);
+    cursor: pointer;
+    display: none;
+}
+
+
+.mobile-menu{
+    display: none;
+}
+
+
+.mobile-menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        position: absolute;
+        top:20%;
+        left:-100%;
+        transform: translateX(-50%);
+        width: 20rem;
+        padding: 2rem;
+        background: var(--pure-white);
+        border: .1rem solid var(--gold-finger);
+        border-radius: 2rem;
+        box-shadow:
+         rgba(0, 0, 0, 0.053) 8px 8px 8px,
+         rgba(0, 0, 0, 0.053) 8px 8px 8px inset;
+
+        transition: all 0.3s ease-in-out;
+        
+    } 
+
+
+/* SECTIONS */
+
+
+.hero-section{
+
+   min-height: calc(100vh-14vh);
+}
+
+.content,
+.image-container{
+    flex: 1;
+    flex-basis:300px ;
+}
+
+
+h1{
+    font-size: 5.6vw;
+    color: var(--lead);
+    
+
+}
+
+h1 span{
+    color: var(--gold-finger);
+}
+
+
+p{
+    font-size: 1.25rem;
+    color: gray;
+    line-height: 1.8rem;
+    font-weight: 400;
+}
+
+
+.para{
+    margin-block: 2rem;
+    max-width: 550px;
+
+}
+
+.social-icon{
+    background: var(--hint-yellow);
+    width:3rem;
+    aspect-ratio: 1;
+    border-radius:1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 3rem;
+    box-shadow:rgba(0, 0, 0, 0.1) 0px 2px 1px ;
+    transition: .3s ease-in-out;
+
+}
+
+
+.social-icon:hover{
+    background: var(--lead);
+    color: var(--pure-white);
+}
+/* FOOTER */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:780px){
+
+    .desktop-action .hamburger{
+        display: block;
+    }
+
+    .nav-list, .desktop-action .btn{
+        display: none;
+    }
+
+
+
+
+
+
+    .mobile-menu.active{
+        left: 50%;
+        transform: translateX(-50%);
+       
+    }
+
+
+    h1{
+        font-size: 3.6rem;
+
+    }
+
+
+    .content{
+        padding-top: 3rem;
+    }
+
+
+    .gap-2{
+        gap: 1.5rem;
+    }
+
+
+    .gap-4{
+        gap:4rem;
+    }
+}
+
